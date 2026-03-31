@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Teja Bogireddy</title>
+    <link rel="icon" href="data:," />
+    <link
+      rel="stylesheet"
+      href="/webpage_files/style.css"
+      type="text/css"
+      media="screen"
+    />
+  </head>
+
+  <body>
+    <div id="content">
+      <h1 class="main-title">Teja Bogireddy</h1>
+
+      <div style="grid-column: 1 / -1; margin: -1em 0 1em; font-style: italic; color: #555; text-align: center;">
+        "Whatever is dependently arisen, that we declare to be emptiness. That is a dependent designation; that itself is the middle path."
+        <br><span style="font-style: normal; font-size: 0.9em;">— Mūlamadhyamakakārikā 24:18</span>
+      </div>
+
+      <div class="left">
+        <img src="webpage_files/IMG_2748.jpeg" alt="Teja Bogireddy" />
+        <p style="text-align: center;">
+          bogireddyteja @ uchicago.edu
+        </p>
+      </div>
+
+      <div class="right entry">
+        <div style="font-size: 1.3em; margin-bottom: 1em;">
+          I am a Senior Full-Stack Data Scientist at 
+          <a href="https://www.exeloncorp.com/" target="_blank">Exelon</a>. 
+          My work spans 
+          <span class="tooltip">generative AI<span class="tooltiptext">Building production-scale LLM-powered chatbots, multi-agent workflows, and RAG systems.</span></span>, 
+          <span class="tooltip">machine learning<span class="tooltiptext">Deep learning, time-series analysis, transformer models, and computer vision.</span></span>, and 
+          <span class="tooltip">full-stack engineering<span class="tooltiptext">React frontends, FastAPI microservices, Azure cloud-native architecture, and MLOps.</span></span>.
+        </div>
+
+        <h3>News</h3>
+
+        <p>
+          March 2026: Our paper <em>CoVR-R: Reason-Aware Composed Video Retrieval</em> is accepted at <strong>CVPR Findings 2026</strong>.
+        </p>
+
+        <p>
+          February 2026: Ranked 2nd in the <strong>CL4Health @ LREC 2026</strong> Shared Task on Evidence-Grounded Clinical QA from Electronic Health Records.
+        </p>
+
+        <p>
+          November 2025: Received the <strong>AEIC Achievement Award</strong> for developing POSEIDON, an AI-powered storm response tool.
+        </p>
+
+        <p>
+          August 2025: Our paper <em>Time-Series Clustering: A Comprehensive Study</em> is published at <strong>VLDB 2025</strong>.
+        </p>
+
+        <p>
+          July 2025: Ranked 2nd in <strong>BioNLP @ ACL 2025</strong> Shared Task on Evidence-Grounded Clinical QA.
+        </p>
+
+        <p>
+          February 2025: Invited speaker at the <strong>AAAI Workshop on Urban Planning</strong>, presenting research on Longitudinal Tabular Transformers for Estimated Time to Restoration.
+        </p>
+      </div>
+    </div>
+
+    <!-- FOOTER LOAD -->
+    <div id="footer"></div>
+    <script>
+      fetch("/webpage_files/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

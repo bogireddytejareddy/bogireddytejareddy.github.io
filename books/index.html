@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Teja Bogireddy — Books</title>
+    <link rel="icon" href="data:," />
+    <link
+      rel="stylesheet"
+      href="/webpage_files/style.css"
+      type="text/css"
+      media="screen"
+    />
+  </head>
+
+  <body>
+    <div id="content" class="single-wide">
+      <h1>
+        <a href="/index.html">Teja Bogireddy</a>: <strong>Books</strong>
+      </h1>
+
+      <p style="text-align: center; margin-bottom: 2em; font-size: 1.05em;">
+        What I'm reading and what I've recently finished.
+      </p>
+
+      <!-- ============ Now Reading ============ -->
+      <h2 style="margin-top: 0;">Now Reading</h2>
+      <div class="book-shelf">
+        <div class="book-item">
+          <img src="/books/Now Reading/61SvyuRSpmL._SL1400_.jpg" alt="Book cover" loading="lazy" />
+        </div>
+        <div class="book-item">
+          <img src="/books/Now Reading/71L0u9kkctL._SL1480_.jpg" alt="Book cover" loading="lazy" />
+        </div>
+        <div class="book-item">
+          <img src="/books/Now Reading/817o5e74zAL._SL1500_.jpg" alt="Book cover" loading="lazy" />
+        </div>
+        <div class="book-item">
+          <img src="/books/Now Reading/91lodyiEc+L._SL1500_.jpg" alt="Book cover" loading="lazy" />
+        </div>
+        <div class="book-item">
+          <img src="/books/Now Reading/91t6OROY8qL._SL1500_.jpg" alt="Book cover" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- ============ Recently Read ============ -->
+      <h2>Recently Read</h2>
+      <div class="book-shelf">
+        <div class="book-item">
+          <img src="/books/Recently Read/51ss32l1V9L._SL1200_.jpg" alt="Book cover" loading="lazy" />
+        </div>
+        <div class="book-item">
+          <img src="/books/Recently Read/712fJVnVAkL._SL1500_.jpg" alt="Book cover" loading="lazy" />
+        </div>
+        <div class="book-item">
+          <img src="/books/Recently Read/71xXwHUrsxL._SL1500_.jpg" alt="Book cover" loading="lazy" />
+        </div>
+        <div class="book-item">
+          <img src="/books/Recently Read/8194FEV2M6L._SL1500_.jpg" alt="Book cover" loading="lazy" />
+        </div>
+        <div class="book-item">
+          <img src="/books/Recently Read/81DqkjSYrGL._SL1500_.jpg" alt="Book cover" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER LOAD -->
+    <div id="footer"></div>
+    <script>
+      fetch("/webpage_files/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

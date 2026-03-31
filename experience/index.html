@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Teja Bogireddy — Experience</title>
+    <link rel="icon" href="data:," />
+    <link
+      rel="stylesheet"
+      href="/webpage_files/style.css"
+      type="text/css"
+      media="screen"
+    />
+  </head>
+
+  <body>
+    <div id="content" class="single-wide">
+      <h1>
+        <a href="/index.html">Teja Bogireddy</a>: <strong>Experience</strong>
+      </h1>
+
+      <div class="entry">
+        <h3>Employment</h3>
+
+        <p>
+          <strong>Senior Full-Stack Data Scientist — Exelon, Chicago, IL</strong><br />
+          <em>2021 – Present</em>
+        </p>
+
+        <p>
+          <strong>Research Assistant, Department of Computer Science — University of Chicago, Chicago, IL</strong><br />
+          <em>2020 – 2021</em>
+        </p>
+
+        <p>
+          <strong>Machine Learning Engineer — Suspect Technologies, Hyderabad, India</strong><br />
+          <em>2018 – 2020</em>
+        </p>
+
+        <h3>Education</h3>
+
+        <p>
+          <strong>MS in Applied Data Science — The University of Chicago</strong><br />
+          <em>2020 – 2021</em> · GPA: 4.0/4.0<br />
+          Research Advisor: Dr. John Paparrizos
+        </p>
+
+        <p>
+          <strong>BTech with Honours in Computer Science — IIIT Sri City, India</strong><br />
+          <em>2015 – 2019</em><br />
+          Research Advisors: Dr. Shiv Ram Dubey &amp; Dr. Snehasis Mukherjee
+        </p>
+
+        <h3>Technical Skills</h3>
+
+        <p>
+          <strong>Languages:</strong> Python, SQL, MATLAB, C/C++, JavaScript<br />
+          <strong>Tools &amp; Technologies:</strong> Azure, Databricks, PyTorch, TensorRT, Intel OpenVINO, 
+          React, FastAPI, Spark, Dask, Docker, Terraform, CI/CD, CosmosDB, Vector Databases, 
+          DGX Clusters, Tableau, Git, Linux
+        </p>
+      </div>
+    </div>
+
+    <!-- FOOTER LOAD -->
+    <div id="footer"></div>
+    <script>
+      fetch("/webpage_files/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

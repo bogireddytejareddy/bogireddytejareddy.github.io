@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Teja Bogireddy — Contact</title>
+    <link rel="icon" href="data:," />
+    <link
+      rel="stylesheet"
+      href="/webpage_files/style.css"
+      type="text/css"
+      media="screen"
+    />
+  </head>
+
+  <body>
+    <div id="content">
+      <h1>
+        <a href="/index.html">Teja Bogireddy</a>: <strong>Contact</strong>
+      </h1>
+
+      <div class="left">
+        <img src="/webpage_files/IMG_2748.jpeg" alt="Teja Bogireddy" />
+      </div>
+
+      <div class="right entry">
+        <p>
+          <strong>Email:</strong> bogireddyteja@uchicago.edu<br />
+          <strong>Location:</strong> Chicago, IL, USA<br /><br />
+
+          <strong>Links:</strong><br />
+          <a href="https://github.com/bogireddytejareddy" target="_blank">GitHub</a><br />
+          <a href="https://www.linkedin.com/in/bogireddytejareddy/" target="_blank">LinkedIn</a><br />
+          <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a><br />
+        </p>
+
+        <h3 style="margin-top: 20px;">Professional Activities</h3>
+
+        <p>
+          <strong>Peer Review Service:</strong><br />
+          ACM KDD · ACM WWW · IJCNN · IEEE Access · AAAI Workshop · AAMAS Workshop · ACL Workshop · ICML Workshop · ICLR Workshop · NeurIPS Workshop
+        </p>
+
+        <p>
+          <strong>Professional Memberships:</strong><br />
+          Member, IEEE<br />
+          Member, IEEE Power and Energy Society
+        </p>
+      </div>
+    </div>
+
+    <!-- FOOTER LOAD -->
+    <div id="footer"></div>
+    <script>
+      fetch("/webpage_files/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
